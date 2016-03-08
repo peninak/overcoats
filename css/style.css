@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,900,500,300italic);
+
+body {
+	background-color: #d5e8e5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#background_landing {
+	background: url(../images/overcoats-dcondren-final-70.jpg) no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-size: contain;
+  background-color: #d5e8e5;
+	height: 1500px;
+	width: 100%;
+}
+
+nav {
+	position: fixed;
+  right: 0;
+}
+
+h1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+  padding-left: 40px;
+	font-size: 64px;
+	font-weight: 300;
+  font-style: light;
+  font-stretch: ultra-expanded;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #f5efd0;
+	cursor: pointer;
+}
+
+li {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p {
+  width: 87%;
+  margin-left: 40px;
+}
+
+div {
+  overflow: auto;
+}
+
+iframe {
+  width: 44%;
+  height: 355px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body {
+  width: 90%;
+  height: 50%;
+}
+
+.bttn {
+     color: #000;
+     background-color: #f5efd0;
+     border-color: #000;
+     padding: 6px 12px;
+     margin-bottom: 0;
+     font-size: 14px;
+     font-weight: normal;
+     line-height: 1.5;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     cursor: pointer;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+}
+/*.tour-background {
+  /* Bitmap: 
+  background-color: #00022B;
+}
+*/
+
+.mainFrame {
+  width: 89%; 
+  height: 700px;
+} 
+
+.sounds-background {
+  background-color: #15002E;
+}
+
+.tour-content {
+  border: 1px solid rgba(150,150,150,0.22);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.press {
+  width: auto;
+  height: auto;
+}
+
+.pressBox {
+  width: 29%;
+  height: 500px;
+  float: left;
+  border: #000 solid 1px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.clear {
+	overflow: auto;
+}
+
+#nighttime-hunger {
+  background-image: url('../images/NighttimeHunger art work.jpg');
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  width: 90%;
+  height: 400px;
+}
+
+#overcoats {
+  background-image: url('../images/overcoats-little-memory-700x700.jpg');
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 400px;
+}
+/*.mailing {
+	width: 100%;
+	height: 300px;
+	margin: auto;
+  padding-left: 40px;
+  position: fixed;
+  bottom: 0;
+}
+*/
