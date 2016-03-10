@@ -6,7 +6,7 @@
 			<link type="text/css" rel="stylesheet" href="../css/reset.css">
 			<link type="text/css" rel="stylesheet" href="../css/normalize.css">
 			<link type="text/css" rel="stylesheet" href="../css/style.css">
-			<link href='https://fonts.</googleapis.com/css?family=Roboto:400,100,300,500,900,100italic,300italic' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,900,100italic,300italic' rel='stylesheet' type='text/css'>
 		</head>
 		<body>
 			<nav>
@@ -30,8 +30,17 @@
 				</a></li>
 				</ul>
 			</nav>
-			<h1><a href="landing.html">O V E R C O A T S</a></h1>
-			<img class="body" src="../images/up-in-the-air.jpg">
+			<h1><a href="../landing.html">O V E R C O A T S</a></h1>
+			<form action="newsletter.php" method="post">
+				<label for="firstName">First Name</label>
+				<input type="text" name="firstName" class="name" id="firstName"/>
+				<label for="lastName">Last Name</label>
+				<input type="text" name="lastName" class="lastName" id="lastName"/>
+				<label for="email">Email</label>
+				<input type="email" name="email" class="email" id="email"/>
+				<input type="submit" name="submit" class="bttn" value="subscribe"/>
+			</form>
+			<img class="body-image" src="../images/up-in-the-air.jpg">
 			<script type="text/javascript" src="../js/index.js"></script>
 		</body>
 	</html>

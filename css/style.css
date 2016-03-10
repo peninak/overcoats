@@ -27,10 +27,16 @@ h1 {
 	padding-top: 40px;
 	padding-bottom: 40px;
   padding-left: 40px;
-	font-size: 64px;
+	font-size: 3.2em;
 	font-weight: 300;
   font-style: light;
   font-stretch: ultra-expanded;
+}
+
+h2 {
+  padding: 10px 10px 10px 0px;
+  margin-left: 40px;
+  font-size: 1.5em;
 }
 
 a {
@@ -41,6 +47,10 @@ a {
 a:hover {
 	color: #f5efd0;
 	cursor: pointer;
+}
+
+ul {
+  display: inline-block;
 }
 
 li {
@@ -58,6 +68,17 @@ div {
   overflow: auto;
 }
 
+form {
+  margin-left: 40px;
+}
+
+input {
+  margin: 20px 5px 20px 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 5px;
+}
+
 iframe {
   width: 44%;
   height: 355px;
@@ -66,22 +87,49 @@ iframe {
   margin-bottom: 10px;
 }
 
-.body {
-  width: 90%;
-  height: 50%;
+table {
+  margin-left: 40px;
+  border-collapse: collapse;
+}
+
+tr {
+  padding: 10px;
+  display: table-row;
+  width: 89%;
+}
+
+td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+input[type=text]:focus{
+  outline: none;
+  border: solid 2px #000;
+}
+
+input[type=email]:focus{
+  outline: none;
+  border: solid 2px #000;
+}
+
+input[type=submit]:hover{
+  border: solid 2px #000;
+}
+
+.body-image {
+  width: 89%;
+  height: 700px;
 }
 
 .bttn {
      color: #000;
      background-color: #f5efd0;
      border-color: #000;
-     padding: 6px 12px;
      margin-bottom: 0;
-     font-size: 14px;
-     font-weight: normal;
+     font-size: 1em;
      line-height: 1.5;
      text-align: center;
-     white-space: nowrap;
      vertical-align: middle;
      cursor: pointer;
      border: 1px solid transparent;
@@ -91,25 +139,37 @@ iframe {
      -ms-user-select: none;
      -o-user-select: none;
      user-select: none;
+     font-weight: 300;
+     font-style: light;
+     font-family: 'Roboto', sans-serif;
+     width: 15%;
+     height: 45px;
+     margin: 20px 10px 20px 10px;
 }
-/*.tour-background {
-  /* Bitmap: 
-  background-color: #00022B;
-}
-*/
 
 .mainFrame {
   width: 89%; 
   height: 700px;
 } 
 
-.sounds-background {
-  background-color: #15002E;
+.mailing {
+  position: fixed;
+  bottom: 0;
+  background-color: #d5e8e5;
+  width: 100%;
 }
 
 .tour-content {
   border: 1px solid rgba(150,150,150,0.22);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.tour-slideshow {
+  display: block;
+  float: left;
+  padding-left: 20px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .press {
@@ -118,44 +178,77 @@ iframe {
 }
 
 .pressBox {
-  width: 29%;
+  width: 28%;
   height: 500px;
   float: left;
   border: #000 solid 1px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .clear {
 	overflow: auto;
 }
 
-#nighttime-hunger {
-  background-image: url('../images/NighttimeHunger art work.jpg');
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  width: 90%;
-  height: 400px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    width: 81%;
+  }
+
+  tr {
+    width: 81%;
+  }
+
+  .body-image {
+    width: 85%;
+    height: 550px;
+  }
+
+  .pressBox {
+  width: 26%;
+  height: 350px;
+  }
 }
 
-#overcoats {
-  background-image: url('../images/overcoats-little-memory-700x700.jpg');
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 400px;
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    width: 78%;
+  }
+
+  .body-image {
+    width: 83%;
+    height: 500px;
+  }
+
+  .pressBox {
+  width: 37%;
+  height: 250px;
+  }
 }
-/*.mailing {
-	width: 100%;
-	height: 300px;
-	margin: auto;
-  padding-left: 40px;
-  position: fixed;
-  bottom: 0;
-}
-*/
+
+@media only screen and (max-width: 567px) {
+    body {
+      font-size: 14px;
+    }
+
+    p {
+      width: 72%;
+    }
+
+    .body-image {
+    width: 78%;
+    height: 400px;
+    } 
+
+    .pressBox {
+    width: 37%;
+    height: 250px;
+    }
+  }
