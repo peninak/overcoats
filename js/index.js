@@ -11,19 +11,10 @@ var tourImages = ["../images/winter-tour.jpg", "../images/fall-tour.jpg", "../im
 //code to make the layout responsive
 $(window).on('resize', function() {
 	$('body').height($(window).height());
+	$('body').width($(window).width());
 });
 
-//animate the element with the id 'first'
-$(document).ready(function() {
-	$('bttn').width($('input').width());
-	$('bttn').height($('input').height());
-	$('#first').height($(window).height());
-	$('#first').width($(window).width());
-	$('#first').css('margin', '0');
-	$('a').animate({
-		color: '#f5efd0'
-	}, 3000);
-});
+
 
 $('.tour-image').on('click', function() {
 	$(this).height('25%');

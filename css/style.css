@@ -13,9 +13,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
 	background-size: contain;
+  box-sizing: border-box;
   background-color: #d5e8e5;
 	height: 1500px;
 	width: 100%;
+  margin: 0;
 }
 
 nav {
@@ -47,6 +49,11 @@ a {
 a:hover {
 	color: #f5efd0;
 	cursor: pointer;
+}
+
+a:hover .vid {
+  color: 'red';
+  cursor: pointer;
 }
 
 ul {
@@ -173,16 +180,25 @@ input[type=submit]:hover{
 }
 
 .press {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.press:hover {
+  background: rgba(255, 255, 255, 0.6); 
 }
 
 .pressBox {
   width: 28%;
-  height: 500px;
+  height: 400px;
   float: left;
   border: #000 solid 1px;
   margin: 10px 10px 10px 10px;
+}
+
+.pressClipping {
+  visibility: hidden;
+  color: #000;
 }
 
 .clear {

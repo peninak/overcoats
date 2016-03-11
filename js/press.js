@@ -9,20 +9,22 @@ var isScrolling = false;
 
 function loadMore() {
 		$(window).on('scroll', function () {
-			if($(window).scrollHeight >= $(window).height()) {
+			// if($(window).scrollHeight >= $(window).height()) {
 				while(i<pressImages.length){
 					isScrolling = true;
 					i++;
-					$('.boxes').append('<div class="pressBox"</div>');
-					$(this).append('img class="pressImage"');
-					$('.pressImage').src(pressImages[i]);
+					$('.boxes').append('<div class="pressBox"> <img class="pressImage" src=' + pressImages[i] + '/></div>');
 					console.log(i);
-			}
+			// }
 			} 
 			});
 		};
 
 $(document).ready(function() {
+	$('.pressBox').hover(function() {
+		overlay_background: '#000';
+	    overlay_opacity: 0.6;
+		});
 	loadMore();
 });
 
