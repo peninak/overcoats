@@ -14,16 +14,22 @@ $(window).on('resize', function() {
 	$('body').width($(window).width());
 });
 
-
-
-$('.tour-image').on('click', function() {
-	$(this).height('25%');
-	$(this).width('70%');
-	$('.tour-image').css('visibility', 'hidden');
-	$(this).css({
-		'visibility': 'visible',
-		'vertical-align': 'middle',
-	});
-	$('body').css('background-color', 'rgba(0, 0, 0, 0.85)');
+$(document).ready(function() {
 });
+
+$(window).on('scroll', function(){
+	var scrollHeight = $(document).height();
+	var scrollPosition = $(window).height() + $(window).scrollTop();
+	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+		$('.mailing').css({
+		'visibility': 'visible',
+		});
+	} else {
+		$('.mailing').css({
+		'visibility': 'hidden',
+		});
+	}					
+});
+
+
 
