@@ -179,7 +179,7 @@ input[type=submit]:hover{
   position: fixed;
   bottom: 0;
   background-color: #d5e8e5;
-  width: 90%;
+  width: 100%;
   visibility: hidden;
 }
 
@@ -316,7 +316,7 @@ input[type=submit]:hover{
   }
 
   .mailing {
-    width: 90%;
+    width: 100%;
   }
 
   .pressBox {
