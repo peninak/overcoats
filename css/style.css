@@ -210,13 +210,6 @@ input[type=submit]:hover{
   display: none;
 }
 
-<<<<<<< HEAD
-=======
-.expand {
-  display: block !important; 
-}
-
->>>>>>> origin/master
 .menu-btn div {
  position: absolute;
  left: 100%;
@@ -241,10 +234,6 @@ input[type=submit]:hover{
 .responsive-menu{
  display: none;
 }
- 
-.expand {
- display: block !important; 
-}
 
 .tour-content {
   border: 1px solid rgba(150,150,150,0.22);
@@ -252,12 +241,8 @@ input[type=submit]:hover{
 }
 
 .tour-image {
-<<<<<<< HEAD
   width: 33%;
   height: 500px;
-=======
-  width: 15%;
->>>>>>> origin/master
 }
 
 .tour-slideshow {
@@ -295,11 +280,7 @@ input[type=submit]:hover{
   right: 0;
   top: 0;
   bottom: 0;
-<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.6); 
-=======
-  background-color: rgba(255, 255, 255, 0.6); 
->>>>>>> origin/master
   z-index: -1;
 }
 
@@ -314,7 +295,6 @@ input[type=submit]:hover{
 
   input {
     width: 125px;
-<<<<<<< HEAD
   }
 
   input.bttn {
@@ -325,21 +305,6 @@ input[type=submit]:hover{
     width: 150px;
   }
 
-=======
-  }
-
-  input.bttn {
-    width: 125px;
-  } 
-
-  input#email {
-    width: 150px;
-  }
-
->>>>>>> origin/master
-  form {
-    display: block;
-  }
 
   p {
     width: 81%;
