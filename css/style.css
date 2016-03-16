@@ -8,16 +8,26 @@ body {
 }
 
 #background_landing {
-	background: url(../images/overcoats-dcondren-final-70.jpg) no-repeat;
+	background: url(../images/overcoats-dcondren-final-70.jpg) no-repeat center center;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-	background-size: contain;
+	background-size: cover;
   box-sizing: border-box;
   background-color: #d5e8e5;
 	height: 1500px;
 	width: 100%;
   margin: 0;
+}
+
+#life {
+  background: url(../images/sunglasses.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
 }
 
 nav {
@@ -36,8 +46,7 @@ h1 {
 }
 
 h2 {
-  padding: 10px 10px 10px 0px;
-  margin-left: 40px;
+  padding: 10px;
   font-size: 1.5em;
 }
 
@@ -51,9 +60,13 @@ a:hover {
 	cursor: pointer;
 }
 
-a:hover .vid {
-  color: 'red';
-  cursor: pointer;
+a.press {
+  color: #000;
+  font-size: 2em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 64px;
+  z-index: -1;
 }
 
 ul {
@@ -75,22 +88,28 @@ div {
   overflow: auto;
 }
 
+form {
+  display: inline-block;
+}
+
 input {
-  margin: 10px 5px 10px 5px;
+  margin: 20px 0px 20px 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   display: inline-block;
   width: 150px;
   height: 30px;
+  padding: 10px;
 }
 
 #email {
-  margin: 10px 5px 10px 5px;
+  margin: 20px 0px 20px 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   display: inline-block;
   width: 200px;
   height: 30px;
+  padding: 10px;
 }
 
 iframe {
@@ -99,6 +118,14 @@ iframe {
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+span {
+  font-weight: 300;
 }
 
 table {
@@ -129,6 +156,10 @@ input[type=submit]:hover{
   border: solid 2px #000;
 }
 
+input[type=submit]: {
+  border: solid 2px #000;
+}
+
 .body-image {
   width: 89%;
   height: 700px;
@@ -155,13 +186,20 @@ input[type=submit]:hover{
      font-style: light;
      font-family: 'Roboto', sans-serif;
      width: 175px;
-     height: 35px;
-     margin: 20px 5px 25px 5px;
+     height: 55px;
+     margin: 20px 0px 20px 20px;
+     padding: 10px;
+}
+
+.connect-body {
+  width: 89%;
+  height: 90%;
 }
 
 .connect {
   float: left;
   clear: after;
+  margin: 20px 40px 20px 0px;
 }
 
 .form {
@@ -180,7 +218,9 @@ input[type=submit]:hover{
   bottom: 0;
   background-color: #d5e8e5;
   width: 100%;
+  height: 10%;
   visibility: hidden;
+  display: inline-block;
 }
 
 
@@ -261,6 +301,7 @@ input[type=submit]:hover{
   margin: 10px 10px 10px 10px;
   cursor: pointer;
   z-index: 1;
+  position:relative;
 }
 
 .pressBoxAdded {
@@ -271,21 +312,52 @@ input[type=submit]:hover{
   margin: 10px 10px 10px 10px;
   cursor: pointer;
   z-index: 1;
+  position:relative;
 }
 
-.pressBox:hover:after {
-  content: ' ';
+.overlay {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  /*content:" ";*/
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
   background: rgba(255, 255, 255, 0.6); 
-  z-index: -1;
+}
+
+.pressBox:hover .overlay,
+.pressBoxAdded:hover .overlay{
+  opacity: 1;
 }
 
 .clear {
 	overflow: auto;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  input {
+    margin: 15px 0px 15px 15px;
+    width: 125px;
+    padding: 10px;
+  }
+
+  #email {
+    width: 175px;
+    margin: 15px 0px 15px 15px;
+    padding: 10px;
+  }
+
+  input.bttn {
+    margin: 15px 0px 15px 15px;
+    width: 125px;
+    padding: 10px;
+  }
+
+  label {
+    margin-left: 15px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -294,17 +366,26 @@ input[type=submit]:hover{
   }
 
   input {
-    width: 125px;
+    width: 100px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
   }
 
   input.bttn {
-    width: 125px;
+    width: 110px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
   } 
 
   input#email {
-    width: 150px;
+    width: 130px;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
   }
 
+  label {
+    margin-left: 5px;
+  }
 
   p {
     width: 81%;
@@ -323,6 +404,18 @@ input[type=submit]:hover{
   width: 26%;
   height: 350px;
   }
+
+  .pressBoxAdded {
+    width: 26%;
+  }
+
+  .tour-slideshow {
+    width: 85%;
+  }
+
+  .tour-image {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -330,8 +423,30 @@ input[type=submit]:hover{
     font-size: 16px;
   }
 
-  #email {
+  input {
     width: 150px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+  }
+
+  input.bttn {
+    width: 150px;
+    margin: 20px 0px 20px 20px;
+    padding: 10px;
+  } 
+
+  input#email {
+    width: 175px;
+    margin: 20px 0px 20px 20px;
+    padding: 10px;
+  }
+
+  form {
+    display: block;
+  }
+
+  label {
+    margin-left: 20px;
   }
 
   p {
@@ -351,12 +466,29 @@ input[type=submit]:hover{
   width: 37%;
   height: 250px;
   }
+
+  .pressBoxAdded {
+    width: 37%;
+  }
+
+  .mailing {
+  height: 20%;
+  }
+
+  .tour-slideshow {
+    width: 83%;
+  }
+
+  .tour-image {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 567px) {
     body {
       font-size: 14px;
     }
+
 
     p {
       width: 72%;
@@ -375,4 +507,16 @@ input[type=submit]:hover{
     width: 37%;
     height: 250px;
     }
+    
+    .pressBoxAdded {
+      width: 37%;
+    }
+    .tour-slideshow {
+    width: 78%;
+    }
+
+   .tour-image {
+    width: 100%;
+    }
+
   }
