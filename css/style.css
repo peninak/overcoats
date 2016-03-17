@@ -205,12 +205,21 @@ input[type=submit]: {
 .form {
   float: left;
   display: block;
-  width: 18%;
+  width: 25%;
+}
+
+.life-slideshow {
+  width: 89%;
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .mainFrame {
   width: 89%; 
   height: 700px;
+  vertical-align: center;
 } 
 
 .mailing {
@@ -288,7 +297,6 @@ input[type=submit]: {
 .tour-slideshow {
   display: block;
   float: left;
-  padding-left: 20px;
   width: 89%;
   cursor: pointer;
 }
@@ -330,6 +338,21 @@ input[type=submit]: {
 .pressBox:hover .overlay,
 .pressBoxAdded:hover .overlay{
   opacity: 1;
+}
+
+.slideshow-image {
+  width: 45%;
+  height: 600px;
+}
+
+.store {
+  width: 40%;
+  float: left;
+  height: 600px;
+}
+
+#left {
+  padding-left: 10%;
 }
 
 .clear {
@@ -488,7 +511,6 @@ input[type=submit]: {
     body {
       font-size: 14px;
     }
-
 
     p {
       width: 72%;

@@ -1,6 +1,6 @@
 //loop through image slideshow
 var tourImages = ["../images/winter-tour.jpg", "../images/fall-tour.jpg", "../images/london-tour.jpg", "../images/dublin-tour.jpg", "../images/june-tour.jpg"];
-
+var lifeImages = ["../images/coats-snow.jpg", "../images/overcoats-dcondren-final-72.jpg"]
 // function tourSlideshow() {
 // 	setInterval(function() {
 // 		for(var i=0; i < tourImages.length; i++){
@@ -15,6 +15,7 @@ $(window).on('resize', function() {
 });
 
 $(document).ready(function() {
+	slideshow();
 });
 
 $(window).on('scroll', function(){
@@ -30,6 +31,12 @@ $(window).on('scroll', function(){
 		});
 	}					
 });
+
+function slideshow() {
+	for(var i=0; i<lifeImages.length; i++) {
+		$('.life-slideshow').append('<img class="slideshow-image" src=' + lifeImages[i] + '>');
+	}
+};
 
 // function($) {
 // 	window.fnames = new Array(); 

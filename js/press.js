@@ -45,7 +45,7 @@ function addContent() {
 			'background-size': '100% 100%', 
 			'background-repeat': 'no-repeat',
 		});
-		$('.pressBox .overlay').eq(display).html('<a class="press" href=' + pressLinks[pressLinksIndex] + '' + 'target="blank">' + headlines[headlinesIndex] + '</a>');
+		$('.pressBox .overlay').eq(display).html('<a class="press" href=' + pressLinks[pressLinksIndex] + ' target="_blank">' + headlines[headlinesIndex] + '</a>');
 		display++;
 		pressLinksIndex++;
 		headlinesIndex++;
