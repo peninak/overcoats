@@ -12,6 +12,13 @@ var lifeImages = ["../images/coats-snow.jpg", "../images/overcoats-dcondren-fina
 $(window).on('resize', function() {
 	$('body').height($(window).height());
 	$('body').width($(window).width());
+		// var i=0;
+		// while(i<3){
+		// 	$('.mailing span').each(function(i) {
+		// 		$(this).replaceWith('<div class="mc-field-group">' + $(this).html() + "</div>");
+		// 		i++;
+		// 	});
+	// }
 });
 
 $(document).ready(function() {
